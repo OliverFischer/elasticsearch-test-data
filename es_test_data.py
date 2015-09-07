@@ -221,7 +221,7 @@ if __name__ == '__main__':
     tornado.options.define("index_type", type=str, default='test_type', help="Type")
     tornado.options.define("batch_size", type=int, default=1000, help="Elasticsearch bulk index batch size")
     tornado.options.define("num_of_shards", type=int, default=2, help="Number of shards for ES index")
-    tornado.options.define("count", type=int, default=10000, help="Number of docs to generate")
+    tornado.options.define("count", type=int, default=1000000, help="Number of docs to generate")
     tornado.options.define("format", type=str, default='name:str,age:int,last_updated:ts', help="message format")
     tornado.options.define("num_of_replicas", type=int, default=0, help="Number of replicas for ES index")
     tornado.options.define("force_init_index", type=bool, default=False, help="Force deleting and re-initializing the Elasticsearch index")
